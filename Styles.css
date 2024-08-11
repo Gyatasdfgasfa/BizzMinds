@@ -1,0 +1,95 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #00796b, #004d40); /* Gradient from teal to dark teal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 90%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #004d40; /* Dark teal color for text */
+    margin: 0;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00796b, #004d40); /* Gradient text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.idea-box {
+    background: #e0f2f1; /* Light teal background */
+    border: 1px solid #b2dfdb;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.idea-box::before {
+    content: '💡';
+    font-size: 2em;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p {
+    font-size: 1.3em;
+    color: #004d40; /* Dark teal color for text */
+    margin: 0;
+}
+
+button {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #2196f3, #1976d2); /* Blue gradient */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1976d2, #1565c0); /* Darker blue gradient */
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
